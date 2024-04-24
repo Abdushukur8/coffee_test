@@ -378,13 +378,26 @@ a, button, input, textarea, svg *{
 }
 
 .second_slider{
+  height: 1080px;
   background: url(../img/main_slider/second_slider.jpg) no-repeat center;
-  
+}
+.second_slider_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 4s linear infinite;
+}
+.second_slide_title{
+  color: white;
+  font-size: 80px;
+  letter-spacing: 3px;
+  text-align: center;
 }
 
 
-
-
+.cup_slide{
+  filter: blur(1.2px);
+}
 
 
 .bean{
@@ -399,7 +412,7 @@ a, button, input, textarea, svg *{
   }
 
   50% {
-      transform: translateY(-2rem);
+      transform: translateY(-4rem);
   }
 }
 
