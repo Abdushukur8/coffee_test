@@ -491,13 +491,13 @@ a, button, input, textarea, svg *{
     font-size: 22px;
   }
   .slider{
-    height: 800px;
+    height: 1080px;
   }
   .home_slide_first{
     display: none;
   }
   .home_slide_second{
-    height: 800px ;
+    height: 1080px ;
   }
 
   .home_slide_second_title{
@@ -533,6 +533,12 @@ a, button, input, textarea, svg *{
   .navbar_vector{
     display: none;
   }
+  .slider{
+    height: 840px;
+  }
+  .home_slide_second{
+    height: 840px;
+  }
 }
 @media (max-width: 500px ) {
   .header_logo{
@@ -548,6 +554,9 @@ a, button, input, textarea, svg *{
   }
   .navbar_search{
     column-gap: 12px;
+  }
+  .bean{
+    width: 250px;
   }
 }
 @media (max-width: 395px ) {
