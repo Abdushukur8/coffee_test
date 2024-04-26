@@ -481,8 +481,7 @@ svg * {
 .fairtrade_grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  background-color: #FDF1D9;
-
+  background-color: #fdf1d9;
 }
 
 .our_blends {
@@ -550,13 +549,16 @@ svg * {
 }
 
 .more_than_title {
+  text-transform: uppercase;
   color: white;
   width: 1000px;
   text-align: center;
   font-size: 100px;
   line-height: 110px;
 }
+/* more than end */
 
+/* quotes start  */
 .quotes_grid {
   display: flex;
   align-items: center;
@@ -597,6 +599,11 @@ svg * {
   margin-bottom: 52px;
 }
 
+
+/* quotes end  */
+
+
+/* centre coffee start  */
 .centre_coffee_wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -698,7 +705,31 @@ svg * {
   margin-top: 45px;
 }
 
+/* centre coffee start  */
 
+/* for you start */
+
+.the_coffee_thats{
+  border: 1px solid #000;
+}
+
+.the_coffee_thats_title{
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 80px;
+  padding: 38px 0 38px 0 ;
+  margin-left: 50px;
+}
+
+
+.kind_of_coffee{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cards_coffee{
+  border: 1px solid #000;
+  padding-left: 42px;
+}
 
 @media (max-width: 1280px) {
   .centre_coffee_wrapper {
@@ -782,9 +813,32 @@ svg * {
     display: none;
   }
 
-  .quotes_info {
-    max-width: 755px;
+  .quotes_grid{
+    background: url(../img/main_another_/quotes_img.png) center no-repeat;
+    background-size: cover;
   }
+
+  .quotes_info {
+    border: 1px solid #000;
+    background: #0000005c;
+    color: white;
+    letter-spacing: 1px;
+    backdrop-filter: blur(20px);
+    max-width: 100vw;
+  }
+  .more_than_container{
+    height: 450px;
+  }
+
+  /* for you start  */
+  
+  
+  .the_coffee_thats_title{
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  /* for you end  */
 
 }
 
@@ -819,6 +873,25 @@ svg * {
     bottom: 310px;
     width: 100px;
   }
+  .more_than_container{
+    height: 350px;
+  }
+  .more_than_title{
+    font-size: 65px;
+    line-height: 75px;
+  }
+
+
+  /* for you start  */
+  .the_coffee_thats_title{
+    font-size: 45px;
+    line-height: 55px;
+    margin-left: 5px;
+  }
+
+
+
+  /* for you end  */
 }
 
 
@@ -982,6 +1055,17 @@ svg * {
   .quotes_autor {
     font-size: 20px;
   }
+    /* for you start  */
+    .the_coffee_thats_title{
+      font-size: 35px;
+      line-height: 45px;
+      margin-left: 5px;
+    }
+  
+  
+  
+  
+    /* for you end  */
 }
 
 
@@ -1040,6 +1124,13 @@ svg * {
     font-size: 50px;
     line-height: 60px;
   }
+  .more_than_container{
+    height: 300px;
+  }
+  .more_than_title{
+    font-size: 55px;
+    line-height: 65px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -1056,6 +1147,7 @@ svg * {
   .turned_txt {
     font-size: 32px;
   }
+  
 }
 
 @media (max-width: 330px) {
