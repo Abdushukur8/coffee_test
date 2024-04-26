@@ -3,7 +3,7 @@
 const navbar = document.querySelector('.navbar')
 const burger = document.querySelector('.header__burger')
 
-function openBurger(){
+function openBurger() {
     navbar.classList.toggle('bur_open')
 }
 burger.addEventListener('click', openBurger)
@@ -12,7 +12,7 @@ burger.addEventListener('click', openBurger)
 
 const searchHeader = document.querySelector('.header_search')
 const searIcon = document.querySelector('.icon_search')
-searIcon.addEventListener('click', function(){
+searIcon.addEventListener('click', function () {
     searchHeader.classList.toggle('header_search_active')
 })
 
@@ -30,14 +30,14 @@ function show(index) {
 }
 
 slideControls.forEach((e) => {
-    e.addEventListener('click', () =>{
-        if (event.target.classList.contains('prevBtn')){
+    e.addEventListener('click', () => {
+        if (event.target.classList.contains('prevBtn')) {
             let index = imageIndex - 1
-            if(index < 0){
+            if (index < 0) {
                 index = images.length - 1
             }
             show(index)
-        }else if (event.target.classList.contains('nextBtn')) {
+        } else if (event.target.classList.contains('nextBtn')) {
             let index = imageIndex + 1;
             if (index >= images.length) {
                 index = 0;
