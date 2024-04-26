@@ -536,18 +536,20 @@ svg * {
   margin-top: 31px;
   margin-bottom: 5px;
 }
+
 /* fairtrade end  */
 
 /* more than start */
 
-.more_than_container{
+.more_than_container {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   height: 752px;
   background: url(../img/main_more_than/more_than_just.png)center no-repeat;
 }
-.more_than_title{
+
+.more_than_title {
   color: white;
   width: 1000px;
   text-align: center;
@@ -555,7 +557,7 @@ svg * {
   line-height: 110px;
 }
 
-.quotes_grid{
+.quotes_grid {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -563,31 +565,170 @@ svg * {
   border-bottom: 0;
   flex-shrink: 0;
 }
-.quotes_img{
+
+.quotes_img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.quotes_star, .quotes_square_wrapper{
+
+.quotes_star,
+.quotes_square_wrapper {
   display: flex;
   justify-content: center;
   margin: 50px 0 50px 0;
 }
-.quotes_square{
+
+.quotes_square {
   margin-left: 15px;
 }
-.quotes_info{
+
+.quotes_info {
   text-align: center;
   max-width: 42vw;
   margin: 0 auto;
 }
-.quotes_title{
+
+.quotes_title {
   font-family: Anton;
   font-size: 35px;
-  line-height:45px ;
+  line-height: 45px;
   text-transform: uppercase;
   margin-bottom: 52px;
 }
+
+.centre_coffee_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  border: 1px solid #000;
+  /* border-bottom: 0; */
+}
+
+.turned_wrapper {
+
+  display: flex;
+  /* justify-content:flex-start; */
+}
+
+.centre_coffee_turned_txt {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  border: 1px solid #000;
+  border-top: 0;
+  border-right: 0;
+  padding: 50px 23px 514px 22px;
+}
+
+
+.turned_txt {
+  font-family: Anton;
+  font-size: 50px;
+  line-height: 60px;
+  height: 500px;
+}
+
+.centre_coffee_img {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+
+}
+
+.amsterdam_centre {
+
+  max-width: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  margin: auto 0;
+  padding-top: 45px;
+  margin-left: 60px;
+}
+
+.amsterdam_centre_title {
+  letter-spacing: 1px;
+  font-family: Anton;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.amsterdam_centre_address {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.amsterdam_centre_tel {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.amsterdam_centre_email {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.amsterdam_centre_time {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.amsterdam_centre_contact-link {
+  font-family: Anton;
+  font-size: 17px;
+  background: url(/img/svg/amsterdam_centre_contact-link.svg) no-repeat center;
+  color: white;
+  background-color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition-duration: 400ms;
+}
+
+.amsterdam_centre_contact-link:hover {
+  background-color: #6f4e37;
+  color: black;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 20px 10px 30px #5a402e;
+}
+
+.amsterdam-div_link {
+  margin-top: 45px;
+}
+
+
+
+@media (max-width: 1280px) {
+  .centre_coffee_wrapper {
+    background: url(../img/main_centre_coffee/centre_coffee.png) center no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .centre_coffee_img {
+    display: none;
+  }
+
+  .turned_wrapper {
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    background-color: #20202071;
+    color: white;
+    backdrop-filter: blur(15px);
+    width: 318px;
+  }
+
+  .amsterdam_centre {
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    border: 1px solid #000;
+    background-color: #20202071;
+    color: white;
+    backdrop-filter: blur(15px);
+  }
+
+}
+
 @media (max-width: 1024px) {
   .navbar_list_item {
     margin-right: 20px;
@@ -636,13 +777,15 @@ svg * {
     font-size: 6vw;
     line-height: 6.5vw;
   }
-  .quotes_pic{
+
+  .quotes_pic {
     display: none;
   }
-  .quotes_info{
+
+  .quotes_info {
     max-width: 755px;
   }
-  
+
 }
 
 @media (max-width: 880px) {
@@ -764,6 +907,49 @@ svg * {
     right: 0;
   }
 
+  .centre_coffee_wrapper {
+    grid-template-columns: 4fr;
+  }
+
+  .turned_wrapper {
+
+    display: block;
+    height: auto;
+  }
+
+  .centre_coffee_turned_txt {
+
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    border: 1px solid #000;
+    width: auto;
+    padding: 0;
+    padding-right: 100vw;
+  }
+
+  .turned_txt {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+
+    width: 100vw;
+    height: 120px;
+  }
+
+  .turned_wrapper {
+
+    margin-bottom: 50px;
+    width: 100vw;
+  }
+
+  .amsterdam_centre {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    animation: float 5s linear infinite;
+  }
 }
 
 @media (max-width: 610px) {
@@ -787,14 +973,20 @@ svg * {
     height: 840px;
 
   }
-  .quotes_title{
+
+  .quotes_title {
     font-size: 25px;
     line-height: 35px;
   }
-  .quotes_autor{
+
+  .quotes_autor {
     font-size: 20px;
   }
 }
+
+
+
+
 
 @media (max-width: 500px) {
   .header_logo {
@@ -839,10 +1031,12 @@ svg * {
     font-size: 30px;
     line-height: 40px;
   }
-  .more_than_container{
+
+  .more_than_container {
     height: 525px;
   }
-  .more_than_title{
+
+  .more_than_title {
     font-size: 50px;
     line-height: 60px;
   }
@@ -857,6 +1051,10 @@ svg * {
   .header_mySearch {
     right: 140px;
     width: 70px;
+  }
+
+  .turned_txt {
+    font-size: 32px;
   }
 }
 
