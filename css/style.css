@@ -1182,6 +1182,7 @@ svg * {
   z-index: 1000000000000;
   position: fixed;
   top: 0;
+  bottom: 0;
   transition: .5s;
 }
 
