@@ -61,6 +61,7 @@ const swiperQuotes = new Swiper('.quotes_slider', {
 
     watchOverflow: true,
     slidesPerView: 1,
+    autoHeight: true,
     
   });
 
@@ -90,3 +91,13 @@ const swiperCardForYou = new Swiper('.card_for_you', {
         },
     },
   });
+
+
+const maskLoad = document.querySelector('.mask')
+
+window.addEventListener('load', () =>{
+    maskLoad.classList.add('hideLoad')
+    setTimeout(() =>{
+        maskLoad.remove()
+    },500)
+})
