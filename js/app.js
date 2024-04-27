@@ -47,3 +47,31 @@ slideControls.forEach((e) => {
     })
 })
 show(imageIndex)
+
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.card_for_you_btn_next',
+      prevEl: '.card_for_you_btn_prev',
+    },
+    autoHeight: true,
+    watchOverflow: true,
+    slidesPerView: 4,
+    breakpoints: {
+        1024:{
+            slidesPerView:4,
+        },
+        620:{
+            slidesPerView:2,
+        },
+        0:{
+            slidesPerView:1,
+        },
+    },
+  });
