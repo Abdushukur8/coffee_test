@@ -49,8 +49,23 @@ slideControls.forEach((e) => {
 show(imageIndex)
 
 
+const swiperQuotes = new Swiper('.quotes_slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    pagination:{
+        el: '.quotes_pagination',
+        clickable: true,
+    },
 
-const swiper = new Swiper('.swiper', {
+    watchOverflow: true,
+    slidesPerView: 1,
+    
+  });
+
+
+const swiperCardForYou = new Swiper('.card_for_you', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
