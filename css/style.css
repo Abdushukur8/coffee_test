@@ -609,13 +609,11 @@ svg * {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   border: 1px solid #000;
-  /* border-bottom: 0; */
 }
 
 .turned_wrapper {
 
   display: flex;
-  /* justify-content:flex-start; */
 }
 
 .centre_coffee_turned_txt {
@@ -643,7 +641,7 @@ svg * {
 }
 
 .amsterdam_centre {
-
+ 
   max-width: 300px;
   padding-right: 20px;
   padding-left: 20px;
@@ -652,6 +650,11 @@ svg * {
   margin: auto 0;
   padding-top: 45px;
   margin-left: 60px;
+  margin-right: 20px;
+}
+.amsterdam_centre_txt{
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .amsterdam_centre_title {
@@ -663,43 +666,18 @@ svg * {
   margin-bottom: 24px;
 }
 
-.amsterdam_centre_address {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.amsterdam_centre_tel {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.amsterdam_centre_email {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.amsterdam_centre_time {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
 
 .amsterdam_centre_contact-link {
   font-family: Anton;
-  font-size: 17px;
-  background: url(/img/svg/amsterdam_centre_contact-link.svg) no-repeat center;
   color: white;
   background-color: #000;
   padding: 10px 15px;
-  text-decoration: none;
   transition-duration: 400ms;
 }
 
 .amsterdam_centre_contact-link:hover {
   background-color: #6f4e37;
   color: black;
-  border-radius: 10px;
-  padding: 20px 30px;
-  box-shadow: 20px 10px 30px #5a402e;
 }
 
 .amsterdam-div_link {
@@ -931,6 +909,7 @@ svg * {
     transition: transform .5s, box-shadow .5s;
     border-radius: 0 0 20px 0;
     z-index: 99;
+  
   }
 
   .navbar_list {
@@ -993,36 +972,32 @@ svg * {
     bottom: 0;
     right: 0;
   }
+  .second_slide_title{
+    margin-top: 50px;
+    font-size: 56px;
+  }
 
   .centre_coffee_wrapper {
     grid-template-columns: 4fr;
   }
 
   .turned_wrapper {
-
     display: block;
-    height: auto;
   }
 
   .centre_coffee_turned_txt {
-
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
-    border: 1px solid #000;
-    width: auto;
     padding: 0;
-    padding-right: 100vw;
   }
 
   .turned_txt {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     font-size: 40px;
 
-    width: 100vw;
     height: 120px;
   }
 
@@ -1035,7 +1010,10 @@ svg * {
   .amsterdam_centre {
     margin: 0 auto;
     margin-bottom: 50px;
-    animation: float 5s linear infinite;
+    animation: float 3s linear infinite;
+  }
+  .cards_coffee_img{
+    margin-right: 100px;
   }
 }
 
@@ -1158,11 +1136,12 @@ svg * {
     width: 70px;
   }
 
-  .turned_txt {
-    font-size: 32px;
-  }
   .cup{
     margin-right: 50px;
+  }
+  .second_slide_title{
+    margin-top: 100px;
+    font-size: 50px;
   }
 }
 
@@ -1202,7 +1181,7 @@ svg * {
   background: url('../img/loader/coffee.png');
   background-repeat: repeat-x;
   background-position: 0 130px;
-  animation: filling 5s infinite;
+  animation: filling 4s infinite;
 }
 @keyframes filling {
   0%, 100% {
