@@ -99,5 +99,5 @@ window.addEventListener('load', () =>{
     maskLoad.classList.add('hideLoad')
     setTimeout(() =>{
         maskLoad.remove()
-    },500)
+    },10000)
 })

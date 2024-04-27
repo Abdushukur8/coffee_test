@@ -556,47 +556,54 @@ svg * {
   font-size: 100px;
   line-height: 110px;
 }
+
 /* more than end */
 
 /* quotes start  */
-.quotes{
+.quotes {
   display: flex;
   min-width: 0;
 }
 
 
-.quotes_star{
+.quotes_star {
   display: flex;
   justify-content: center;
   min-width: 0;
 }
-.quotes_slider{
+
+.quotes_slider {
   text-align: center;
   max-width: 50vw;
   margin: auto 0;
-  
+
 }
-.quotes_info{
+
+.quotes_info {
   cursor: grabbing;
 }
-.quotes_wrapper{
- 
+
+.quotes_wrapper {
+
   margin-top: 25px;
 }
-.quotes_title{
+
+.quotes_title {
   font-size: 35px;
   line-height: 45px;
   margin-bottom: 50px;
 }
+
 .quotes_pagination {
   width: 20px;
   height: 20px;
   border-radius: 0;
-  margin-top: 50px; 
-  margin-bottom: 50px;  
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
 .swiper-pagination-bullet {
-  border-radius:0px !important; 
+  border-radius: 0px !important;
   background-color: #000 !important;
 }
 
@@ -641,7 +648,7 @@ svg * {
 }
 
 .amsterdam_centre {
- 
+
   max-width: 300px;
   padding-right: 20px;
   padding-left: 20px;
@@ -652,7 +659,8 @@ svg * {
   margin-left: 60px;
   margin-right: 20px;
 }
-.amsterdam_centre_txt{
+
+.amsterdam_centre_txt {
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -688,47 +696,52 @@ svg * {
 
 /* for you start */
 
-.the_coffee_thats{
+.the_coffee_thats {
   border: 1px solid #000;
 }
 
-.the_coffee_thats_title{
+.the_coffee_thats_title {
   text-transform: uppercase;
   font-size: 70px;
   line-height: 80px;
-  padding: 38px 0 38px 0 ;
+  padding: 38px 0 38px 0;
   margin-left: 50px;
 }
 
 
-.kind_of_coffee{
+.kind_of_coffee {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* text-align: center; */
 }
-.cards_coffee{
+
+.cards_coffee {
   border: 1px solid #000;
-  padding-left: 42px;
-  margin: 0 auto;
+
 }
-.cards_coffee_img{
-  width: auto;
-  margin: 0 auto;
+.cards_coffee_title{
+  margin-left: 10px;
 }
-.card_for_you{
+.cards_prices{
+  margin-left: 10px;
+}
+
+.card_for_you {
   position: relative;
 }
-.card_for_you_btn{
+
+.card_for_you_btn {
   position: absolute;
   top: 50%;
   border: 1px solid #000;
   z-index: 10;
   cursor: pointer;
   background-color: #fbed81;
- }
- .card_for_you_btn_next{
+}
+
+.card_for_you_btn_next {
   right: 0;
- }
+}
 
 @media (max-width: 1280px) {
   .centre_coffee_wrapper {
@@ -812,19 +825,20 @@ svg * {
     display: none;
   }
 
-  .quotes_slider{
+  .quotes_slider {
     max-width: 755px;
     margin-top: 50px;
   }
 
- 
+
 
   /* for you start  */
-  
-  
-  .the_coffee_thats_title{
+
+
+  .the_coffee_thats_title {
     font-size: 60px;
     line-height: 70px;
+    text-align: center;
   }
 
 
@@ -865,17 +879,19 @@ svg * {
     bottom: 310px;
     width: 100px;
   }
-  .more_than_container{
+
+  .more_than_container {
     height: 350px;
   }
-  .more_than_title{
+
+  .more_than_title {
     font-size: 65px;
     line-height: 75px;
   }
 
 
   /* for you start  */
-  .the_coffee_thats_title{
+  .the_coffee_thats_title {
     font-size: 45px;
     line-height: 55px;
     margin-left: 5px;
@@ -909,7 +925,7 @@ svg * {
     transition: transform .5s, box-shadow .5s;
     border-radius: 0 0 20px 0;
     z-index: 99;
-  
+
   }
 
   .navbar_list {
@@ -972,7 +988,8 @@ svg * {
     bottom: 0;
     right: 0;
   }
-  .second_slide_title{
+
+  .second_slide_title {
     margin-top: 50px;
     font-size: 56px;
   }
@@ -1010,11 +1027,8 @@ svg * {
   .amsterdam_centre {
     margin: 0 auto;
     margin-bottom: 50px;
-    animation: float 3s linear infinite;
   }
-  .cards_coffee_img{
-    margin-right: 100px;
-  }
+
 }
 
 @media (max-width: 610px) {
@@ -1047,17 +1061,18 @@ svg * {
   .quotes_autor {
     font-size: 20px;
   }
-    /* for you start  */
-    .the_coffee_thats_title{
-      font-size: 35px;
-      line-height: 45px;
-      margin-left: 5px;
-    }
-  
-    
-  
-  
-    /* for you end  */
+
+  /* for you start  */
+  .the_coffee_thats_title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-left: 5px;
+  }
+
+
+
+
+  /* for you end  */
 }
 
 
@@ -1116,10 +1131,12 @@ svg * {
     font-size: 50px;
     line-height: 60px;
   }
-  .more_than_container{
+
+  .more_than_container {
     height: 300px;
   }
-  .more_than_title{
+
+  .more_than_title {
     font-size: 55px;
     line-height: 65px;
   }
@@ -1136,10 +1153,11 @@ svg * {
     width: 70px;
   }
 
-  .cup{
+  .cup {
     margin-right: 50px;
   }
-  .second_slide_title{
+
+  .second_slide_title {
     margin-top: 100px;
     font-size: 50px;
   }
@@ -1154,7 +1172,7 @@ svg * {
 
 
 
-.mask{
+.mask {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1167,11 +1185,11 @@ svg * {
   transition: .5s;
 }
 
-.hideLoad{
+.hideLoad {
   opacity: 0;
 }
 
-.cup{
+.cup {
   position: relative;
   width: 220px;
   height: 180px;
@@ -1183,13 +1201,16 @@ svg * {
   background-position: 0 130px;
   animation: filling 4s infinite;
 }
+
 @keyframes filling {
-  0%, 100% {
-      background-position: 0 130px;
+
+  0%,
+  100% {
+    background-position: 0 130px;
   }
 
   50% {
-      background-position: 600px -70px;
+    background-position: 600px -70px;
   }
 }
 
@@ -1211,14 +1232,16 @@ svg * {
 }
 
 @keyframes steaming {
-  0%, 100% {
-      opacity: 0;
+
+  0%,
+  100% {
+    opacity: 0;
   }
 
   50% {
-      opacity: 1;
-      filter: blur(.8px);
-      transform: translateY(-10px);
+    opacity: 1;
+    filter: blur(.8px);
+    transform: translateY(-10px);
   }
 }
 
