@@ -63,6 +63,11 @@ const swiperQuotes = new Swiper('.quotes_slider', {
     slidesPerView: 1,
     autoHeight: true,
     
+    speed: 1500,
+    autoplay:{
+        delay: 2000,
+        disableOnInteration:false,
+    }
   });
 
 
@@ -88,7 +93,50 @@ const swiperCardForYou = new Swiper('.card_for_you', {
         },
         0:{
             slidesPerView:1,
+            
         },
+    },
+    speed: 1000,
+    autoplay:{
+        delay: 2000,
+        disableOnInteration:false,
+    },
+  });
+
+
+const swiperTeam = new Swiper('.team', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+        nextEl: '.pagination_team_next',
+        prevEl: '.pagination_team_prev',
+      },
+    watchOverflow: true,
+    slidesPerView: 6,
+    speed: 1000,
+    autoplay:{
+        delay: 2000,
+        disableOnInteration:false,
+    },
+    breakpoints: {
+        1280:{
+            slidesPerView:6,
+        },
+        1024:{
+            slidesPerView:4,
+            
+        },
+        620:{
+            slidesPerView:2,
+        },
+        0:{
+            slidesPerView:1,
+            
+        },
+        
     },
   });
 
@@ -99,5 +147,19 @@ window.addEventListener('load', () =>{
     maskLoad.classList.add('hideLoad')
     setTimeout(() =>{
         maskLoad.remove()
-    },10000)
+    },1000)
 })
+
+
+flatpickr(".data_table", {
+    minDate: "today",
+
+});
+
+flatpickr(".time_table", {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+    time_24hr: true
+    
+});

@@ -79,6 +79,12 @@ a {
   text-decoration: none;
 }
 
+button:hover {
+  border-radius: 5px;
+  /* padding: 5px 10px; */
+  background-color: #6f4e37;
+  color: black;
+}
 a,
 button,
 input,
@@ -715,6 +721,10 @@ svg * {
   /* text-align: center; */
 }
 
+.cards_coffee_img{
+  margin: 0 auto;
+}
+
 .cards_coffee {
   border: 1px solid #000;
 
@@ -742,7 +752,271 @@ svg * {
 .card_for_you_btn_next {
   right: 0;
 }
+/* for you end */
 
+/* menu food start  */
+.menu_food_wrapper{
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr;
+  
+  background-color: #FDF1D9;
+}
+
+.swing{
+  position: relative; 
+  border-right: 1px solid #000;
+  height: 673px;
+}
+.swing_pic{
+  position: absolute;
+  bottom: 0;
+  margin-left: 50px;
+}
+.swing_title{
+  font-size: 4vw;
+  letter-spacing: -1.4px;
+  line-height: 4vw;
+  text-transform: uppercase;
+  max-width: 605px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+
+.menu_food_possibility{
+  position: relative;
+  border-bottom: 1px solid #000;
+ 
+  padding: 45px 0 50px 50px ;
+}
+.possibility_btn{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  font-family: Anton;
+  background-color: transparent;
+}
+
+.possibility_title{
+  font: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.possibility_txt{
+  max-width: 300px;
+}
+/* menu food end  */
+
+
+
+
+.your_table{
+  
+  padding-top: 145px;
+  background: url(../img/main_table/main_back_intro.png) ;
+  border: 1px solid #000;
+  border-top: 0;
+  border-bottom: 0;
+  height: 400px;
+}
+
+.table_title{
+  font-size: 50px;
+  line-height: 60px;
+  
+}
+.table-div_title{
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+
+.table-form__wrap{
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+.table-form__field{
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+.table-form__field::placeholder{
+  color: #000;
+}
+.table-form__submit{
+  border: 0;
+  outline: 0;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  background-color: #000;
+  background-image: url(../img/main_table/amsterdam_centre_contact-link.svg);
+  color: white;
+  font-family: Anton;
+}
+.select_person{
+  border: 0;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 200px;
+
+}
+.select_person option{
+  backdrop-filter: blur(3px);
+}
+
+
+.div_our_team_title{
+  border: 1px solid #000;
+  padding: 35px 0px 32px 50px;
+}
+.our_team_title{
+  font-family: Anton;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.team_list_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* position: relative; */
+}
+.pagination_team{
+  display: none;
+}
+.team_list{
+  border: 1px solid #000;
+  padding: 35px;
+  transition-duration:300ms ;
+
+}
+.team_list_info{
+  margin-top: 30px;
+  text-align: center;
+}
+.team_list_photo{
+  margin: 0 auto;
+}
+
+.team_list_name{
+  font-family: Anton;
+  font-size: 25px;
+  line-height: 30px;
+}
+.team_list_job{
+  font-size: 18px;
+
+}
+.team_list_about{
+  color: white;
+}
+
+.recent_blog{
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  /* padding-top: 52px; */
+  
+}
+.recent_blog_posts{
+  padding-top: 52px;
+  padding-left: 60px;
+}
+.recent_blog_posts_title{
+  font-family: Anton;
+  font-size: 50px;
+  line-height: 60px;
+  max-width: 500px;
+  margin-bottom: 580px;
+}
+
+.recent_blog_posts_btn{
+  background: url(/img/svg/amsterdam_centre_contact-link.svg)no-repeat center;
+  font-family: Anton;
+  font-size: 18px;
+  color: #fff;
+  background-color: #000;
+  border: 0;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition-duration: 300ms;
+}
+
+.recent_blog_posts_btn:hover{
+  background-color: #6f4e37;
+  color: #000;
+  box-shadow: 10px 5px 50px #5a402e;
+}
+.recent_blog_list_info{
+  display: flex;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  border: 1px solid #000;
+  border-top:0 ;
+  padding-left: 60px;
+}
+.recent_blog_list_img{
+  border-radius: 20px;
+  margin-right: 40px;
+}
+.recent_blog_list_date{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.recent_blog_list_title{
+  font-family: Anton;
+  font-size: 35px;
+  line-height: 45px;
+  max-width: 450px;
+  margin-bottom: 115px;
+}
+.recent_blog_list_link{
+  font-family: Anton;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  background: url(/img/svg/arrow_view_more.svg) no-repeat 95% center;
+  padding-right: 50px;
+  transition-duration: 200ms ;
+}
+.recent_blog_list_link:hover{
+  background: #000;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  box-shadow:20px 10px 50px #000;
+
+}
+
+
+.barista_school{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: 1px solid #000;
+  height: 925px;
+  background: #C5D6D1;
+  padding-left: 20px;
+}
+.barista_pic{
+  margin: auto 0;
+  margin-right: 10px;
+}
+.barista_school_info{
+  margin:auto 0 ;
+
+}
+.barista_school_link{
+  font-family: Anton;
+  cursor: pointer;
+  color: #202020;
+}
 @media (max-width: 1280px) {
   .centre_coffee_wrapper {
     background: url(../img/main_centre_coffee/centre_coffee.png) center no-repeat;
@@ -768,6 +1042,36 @@ svg * {
     background-color: #20202071;
     color: white;
     backdrop-filter: blur(15px);
+  }
+  .team_list_wrapper{
+    position: relative;
+  }
+  
+  .pagination_team {
+    display: block;
+    position: absolute;
+    top: 50%;
+    border: 1px solid #000;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fbed81;
+  }
+  
+  .pagination_team_next {
+    right: 0;
+  }
+  .recent_blog{
+    grid-template-columns:1fr 1fr;
+  }
+  .recent_blog_posts{
+    grid-column: span 2;
+    height: 400px;
+  }
+  .recent_blog_list{
+    grid-column: span 2;
+  }
+  .recent_blog_posts_title{
+    margin-bottom: 0;
   }
 
 }
@@ -843,9 +1147,22 @@ svg * {
 
 
   /* for you end  */
-
-
-
+  .your_table{
+  height: 800px;
+}
+  .table-form__wrap{
+    display: block;
+  }
+  .table-form__field{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .table-form__submit{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 880px) {
@@ -900,6 +1217,24 @@ svg * {
 
 
   /* for you end  */
+
+  .possibility_txt{
+    max-width: 250px;
+  }
+
+
+
+
+  .barista_school{
+    display: flex; 
+    align-items: center;
+  }
+  .barista_pic{
+    display: none;
+  }
+  .barista_school_info{
+    text-align: center;
+  }
 }
 
 
@@ -1028,7 +1363,31 @@ svg * {
     margin: 0 auto;
     margin-bottom: 50px;
   }
+  .menu_food_wrapper{
+    grid-template-columns: 1fr 1fr ;
+  }
 
+  .swing{
+    height: 600px;
+    grid-column: span 2;
+    border-bottom: 1px solid black;
+  }
+  .menu_food_possibilities{
+    grid-column: span 2;
+    padding: 0;
+  }
+  .swing_title{
+    font-size: 70px;
+    line-height: 80px;
+  }
+  
+  .recent_blog_list_info{
+    display: block;
+    /* text-align: center; */
+  }
+  .recent_blog_posts_title{
+    max-width: 5000px;
+  }
 }
 
 @media (max-width: 610px) {
@@ -1140,6 +1499,21 @@ svg * {
     font-size: 55px;
     line-height: 65px;
   }
+  .swing_title{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .recent_blog_list_date{
+    margin: 0;
+    padding: 0;
+  }
+  .recent_blog_list_img{
+    margin: 0;
+    padding: 0;
+  }
+  .recent_blog_list_info{
+    padding-left: 10px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -1160,6 +1534,10 @@ svg * {
   .second_slide_title {
     margin-top: 100px;
     font-size: 50px;
+  }
+  .possibility_txt{
+    font-size: 16px;
+    max-width: 180px;
   }
 }
 
