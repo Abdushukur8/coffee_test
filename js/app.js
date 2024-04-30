@@ -102,6 +102,33 @@ const swiperCardForYou = new Swiper('.card_for_you', {
         disableOnInteration:false,
     },
   });
+const swiperOurTrust = new Swiper('.our_trust', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    watchOverflow: true,
+    slidesPerView: 5,
+    breakpoints: {
+        1280:{
+            slidesPerView:5,
+        },
+        1024:{
+            slidesPerView:4,
+        },
+        620:{
+            slidesPerView:2,
+        },
+        0:{
+            slidesPerView:1,
+            
+        },
+    },
+    speed: 1000,
+    autoplay:{
+        delay: 2000,
+        disableOnInteration:false,
+    },
+  });
 
 
 const swiperTeam = new Swiper('.team', {

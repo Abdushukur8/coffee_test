@@ -1017,6 +1017,113 @@ svg * {
   cursor: pointer;
   color: #202020;
 }
+.our_trusted_title{
+  font-size: 70px;
+  line-height: 80px;
+  padding: 10px ;
+}
+
+.our_trust_slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  height: 150px;
+  margin: auto 0;
+  border: 1px solid #000;
+
+}
+
+
+.our_coffee{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #000;
+}
+.our_coffee_list{
+  max-width: 614px;
+  margin:  auto auto;
+  position: relative;
+}
+.our_coffee_list_info_title{
+  font-family: Anton;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+}
+.our_coffee_list_info{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.our_coffee_list_info_txt{
+  font-size:18px ;
+}
+.our_coffee_list_info_price{
+  position: absolute;
+  right: -100px;
+  top: 5px;
+}
+
+
+.div_follow_us_title{
+  border: 1px solid #000;
+  border-top: 0;
+  border-bottom: 0;
+  padding-left: 50px;
+  padding-top: 34px;
+  padding-bottom: 33px;
+}
+
+.follow_us_title{
+  font-family: Anton;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.follow_us_for_more{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  border: 1px solid #000;
+  padding: 30px;
+}
+
+.follow_us_for_more_info_img{
+  width: 300px;
+}
+.follow_us_for_more_info_img{
+  transition-duration: 300ms ;
+
+}
+.follow_us_for_more_info_img:hover{
+  margin-top: -20px;
+  box-shadow: 15px 10px 40px black;
+  border-radius: 10px;
+
+}
+
+
+
+
+.footer_wrapper{
+  display: flex;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.footer_list_info_obj{
+  color: #202020;
+  font-size: 18px;
+}
+.footer_section_social_net_txt_link{
+  color: #202020;
+  font-size: 18px;
+}
+
 @media (max-width: 1280px) {
   .centre_coffee_wrapper {
     background: url(../img/main_centre_coffee/centre_coffee.png) center no-repeat;
@@ -1133,7 +1240,15 @@ svg * {
     max-width: 755px;
     margin-top: 50px;
   }
-
+  .our_coffee_img{
+    display: none;
+  }
+  .our_coffee{
+    grid-template-columns: 1fr;
+  }
+  .our_coffee_list_info_price{
+    right: 0;
+  }
 
 
   /* for you start  */
@@ -1388,6 +1503,10 @@ svg * {
   .recent_blog_posts_title{
     max-width: 5000px;
   }
+  .footer_wrapper{
+    display: block;
+    text-align: center;
+  }
 }
 
 @media (max-width: 610px) {
@@ -1539,12 +1658,21 @@ svg * {
     font-size: 16px;
     max-width: 180px;
   }
+  .follow_us_for_more_info_img{
+    width: 200px;
+  }
+  .follow_us_for_more{
+    gap: 50px;
+    padding: 10px;
+    padding-left: 30px;
+  }
 }
 
 @media (max-width: 330px) {
   .header_logo_min {
     display: none;
   }
+
 }
 
 
